@@ -35,7 +35,7 @@ export default {
         alert('关键字不能为空')
           return false;
       }
-      this.axios.post('http://144.202.18.180/api/search', {keyword:this.title_keyword},{headers:{'Accept':'application/prs.search.v1+json'}})
+      this.axios.post('http://search-api.xuyaoxiang.com/api/search', {keyword:this.title_keyword},{headers:{'Accept':'application/prs.search.v1+json'}})
   .then(function(response){
    data_response.tag_keyword='';
      if(response.data==''){
@@ -56,7 +56,7 @@ export default {
         alert('关键字不能为空')
           return false;
       }
-      this.axios.post('http://144.202.18.180/api/tag', {keyword:this.tag_keyword},{headers:{'Accept':'application/prs.search.v1+json'}})
+      this.axios.post('http://search-api.xuyaoxiang.com/api/tag', {keyword:this.tag_keyword},{headers:{'Accept':'application/prs.search.v1+json'}})
   .then(function(response){
     data_response.title_keyword='';
     if(response.data==''){
