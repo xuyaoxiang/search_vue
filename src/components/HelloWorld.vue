@@ -11,7 +11,7 @@
   </div>
 
   <ul v-if="response && empty_data==false">
-  <li v-for="item in response"><a :href="'http://www.xuyaoxiang.com/index.php/archives/'+item.cid+'.html'">{{item.title}}</a></li>
+  <li v-for="item in response"><a target="_blank" :href="'http://www.xuyaoxiang.com/index.php/archives/'+item.cid+'.html'">{{item.title}}</a></li>
   </ul>
   <p v-if="empty_data && response==''">没有数据为空</p>
 </div>
